@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet">
+
+  <title> Journey to our Kitchen </title>
+
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=TRACKING_ID"></script>
+
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+   gtag('config', 'TRACKING_ID');
+ </script>
+
+</head>
+<body>
+
+  <!-- The navbar for the header -->
+  <nav class="navbar navbar-light bg-light top m-0 p-2 pl-2 pr-2">
+
+    <!-- toggle button and menu items -->
+    <div class="navbar-nav navbar-expand-lg navbar-light mb-auto mr-auto  pt-1">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav bd-navbar-nav mr-auto pl-1">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About Us & Our Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="breakfast.html">Breakfast </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="salty.html">Salty Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="desserts.html">Desserts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact_us.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <!-- search-bar -->
+    <div class="navbar-nav flex-inline mb-auto mt-auto pt-1">
+      <div class="input-group m-auto">
+        <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+        <div class="input-group-append">
+          <button class="search-button btn btn-light active p-1" type="submit">
+            <span class="input-group"><img src="./icons/search.svg"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- jumbotron -->
+  <div class="jumbotron jumbotron">
+    <div class="container-fluid">
+      <h1 class="display-2 font-weight-bold"> Journey to Our Kitchen</h1>
+      <p class="h2 font-weight-bold"> Easy & Tasty Recipees </p>
+    </div>
+  </div>
+
+  <!-- Contact us section -->
+  <div class="container-fluid">
+    <div class="row row-cols-1 justify-content-center align-items-top">
+
+      <!-- Adress information -->
+      <div class="col-12 col-md-4">
+        <h1>Contact us</h1>
+        <p><strong>Telephone</strong>: 0777 999 9999<br>
+          <strong>E-mail</strong>: journetoourkitchen@gmail.com<br></p>
+        </div>
+
+      <!-- Contact form -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+          <!--Section: Contact v.2-->
+          <section class="section">
+            <!--Section heading-->
+            <h2 class="section-heading h2 pt-4 mb-2">Email form</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-6 mb-4">
+                    <form>
+                      <div class="md-form">
+                        <input type="text" id="contact-name" class="form-control">
+                        <label for="contact-name" class="">Your name</label>
+                      </div>
+                      <div class="md-form">
+                        <input type="text" id="contact-email" class="form-control">
+                        <label for="contact-email" class="">Your email</label>
+                      </div>
+                      <div class="md-form">
+                        <input type="text" id="contact-Subject" class="form-control">
+                        <label for="contact-Subject" class="">Subject</label>
+                      </div>
+                    </form>
+                  </div>
+                  <!--Grid column-->
+                  <div class="col-md-6 mb-4">
+                    <div class="md-form primary-textarea">
+                      <textarea id="contact-message" class="md-textarea form-control mb-0" rows="5" style="padding-bottom: 1.2rem;"></textarea>
+                      <label for="contact-message">Your message</label>
+                    </div>
+                  </div>
+                  <!--Grid column-->
+                  <div class="col-md-12">
+                    <div class="text-center">
+                      <button type="button" class="btn button-success send-message-button" onclick="messageSent()">Send message</button>
+                      <script>
+                      function messageSent() {
+                        alert("Thank you for your message!");
+                      }
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer d-md-flex d-lg-flex d-sm-flex d-xl-flex justify-content-around align-items-center mt-5 bg-light">
+
+      <!-- social buttons -->
+      <div class="p-2">
+        <ul class="footer d-flex list-inline align-items-center justify-content-center flex-wrap">
+          <li class="list-inline-item"><a href="https://twitter.com" ><img src="./icons/twitter.png" width = 40px class="p-1"></a></li>
+          <li class="list-inline-item"><a href="https://facebook.com"><img src="./icons/facebook.png" width = 40px class="p-1"></a></li>
+          <li class="list-inline-item"><a href="https://youtube.com"><img src="./icons/youtube.png" width = 40px class="p-1"></a></li>
+          <li class="list-inline-item"><a href="https://snapchat.com"><img src="./icons/snapchat.png" width = 40px class="p-1"></a></li>
+          <li class="list-inline-item"><a href="https://instagram.com"><img src="./icons/instagram.png" width = 40px class="p-1"></a></li>
+        </ul>
+      </div>
+
+      <!-- copyright -->
+      <div class="p-2 d-flex justify-content-center">
+        <p class="footer text-center">2020 © CodeFirst: Girls</p>
+      </div>
+
+      <!-- content links -->
+      <div class="p-2">
+        <ul class="footer d-flex list-inline flex-wrap  justify-content-center">
+          <li class="list-inline-item"><a class="footer-link" href="about.html"> About Us & Our Recipes </a></li>
+          <li class="list-inline-item"><a class="footer-link" href="breakfast.html"> Breakfast Recipes </a>
+          </li>
+          <li class="list-inline-item"><a class="footer-link" href="salty.html"> Salty Recipes </a>
+          </li>
+          <li class="list-inline-item"><a class="footer-link" href="desserts.html"> Desserts </a>
+          </li>
+          <li class="list-inline-item"><a class="footer-link" href="contact_us.html"> Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+  </html>
