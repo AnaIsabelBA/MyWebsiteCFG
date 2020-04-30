@@ -1,0 +1,260 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Jumbotron setting for big screens */
+@media (min-width: 769px) {
+  .jumbotron {
+    background-image: url(../images/colours.jpg);
+    background-size: cover;
+    text-align: right;
+    border-radius: 0px;
+    color: rgb(255, 255, 255);
+  }
+}
+
+/* Jumbotron setting for small screen */
+@media (max-width: 769px) {
+  .display-2 {
+    font-size: 40px;
+  }
+  .jumbotron {
+    background-image:url(../images/colours.jpg);
+    background-size: cover;
+    text-align: left;
+    border-radius: 0px;
+    color: rgb(255, 255, 255);
+  }
+}
+
+/* Adress form in contacts */
+address {
+  display: block;
+  font-style: italic;
+}
+
+/* Map style in contacts */
+map-container{
+  overflow:hidden;
+  padding-bottom:10%;
+  position:relative;
+  height:0;
+}
+
+map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+div.row {
+  flex-grow: 1;
+}
+
+/* Columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* remove default color for links in footer */
+a.footer-link {
+  color: inherit;
+}
+
+/* change color to green and remove underline upton hover on a link in footer */
+a.footer-link:hover {
+  color: #28a781;
+  text-decoration: none;
+}
+
+/* reduce font size in footer */
+div.footer {
+  font-size: 14px;
+}
+
+/* change register button style in header */
+button.register-btn {
+  color: #28a781;
+}
+
+/* chnage register button appearance upon hover */
+button.register-btn:hover {
+  text-decoration: underline;
+  color: #28a781;
+}
+
+* {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 15px;
+  background: #28a781;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+/* Set a style for the submit buttons for the registration form */
+.register-button {
+  background-color: #28a781;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+/* Set a style for the buttons */
+.register-button:hover {
+  background-color: #28a781;
+  color: white;
+  opacity: 1;
+}
+
+/* Set a style for the buttons m */
+.send-message-button {
+  background-color: #28a781;
+  color: white;
+  opacity: 0.9;
+}
+
+/* Set a style for the buttons  */
+.send-message-button:hover {
+  background-color: #28a781;
+  color: white;
+  opacity: 1;
+}
+
+/* remove underline from hyperlinks */
+a:hover {
+  text-decoration: none;
+}
+
+/* The flip card container */
+.flip-card {
+  background-color: transparent;
+  margin: 10px;
+  width: 312px;
+  height: 370px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+  width: 312px;
+  height: 370px;
+  font-family: arial;
+  font-size: 16px;
+}
+
+.flip-card-back {
+  background-color: rgb(255, 255, 255);
+  color: white;
+  width: 312px;
+  height: 370px;
+  font-family: arial;
+  font-size: 16px;
+  transform: rotateY(180deg);
+}
+
+.flipcard-header {
+  font-size: 32px;
+  background-color: #28a781;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 20px;
+}
+
+.flipcard-tagline {
+  font-size: 24px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+}
+
+.flipcard-text {
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+}
+
+/* Change hyperlink in main text colour to green */
+a.text {
+  color: #28a781;
+}
+
+/* Make hyperlinks in text underlined upon hover */
+a.text:hover {
+    text-decoration: underline;
+}
